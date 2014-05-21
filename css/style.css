@@ -1,145 +1,3 @@
-/*------------------------------------------------
-Theme Name: Newa: Responsive HTML Template
-Theme URI: http://template.mycolorpencils.com/newa/
-Description: Newa is a clean, creative and responsive HTML site template with tons of features offering the best way to bring your business and portfolio online!
-Version: 1.0
-Author: mycolorpencils
-Author URI: http://mycolorpencils.com
-------------------------------------------------*/
-
-/*------------------------------------------------
-
-CSS STRUCTURE:
-
-1. IMPORT SECTION
-
-2. GENERAL TYPOGRAPHY
-	2.1 Global Reset & Clearfix
-	2.2 @Font Face
-		- Sosa Icon Font
-	2.3 General Styles
-		- Links
-		- Floating & Alignment
-		- Clear Floats
-	2.4 Columns Styles
-	2.5 Dividers
-	2.6 Basic Lists
-	2.7 Headings
-	2.8 Images Styles
-		- Image with Caption
-		- Image with Frame
-	2.9 Video Styles
-	2.10 Forms Styles
-	2.11 Tables Styles
-	2.12 Pricing Tables
-	2.13 Styled Boxes
-		- Framed Box
-	2.14 Buttons Styles
-		- Buttons Color Scheme
-
-3. SITE STRUCTURE
-	3.1 Header
-		- Logo
-	3.2 Navigation
-	3.3 Tiny Navigation
-	3.4 Intro
-		- Page Title
-		- Page description
-	3.5 FlexSlider
-		- Browser Resets
-		- FlexSlider Necessary Styles
-		- Direction Navigation
-		- Control Navigation
-		- Slider Caption
-	3.6 Content
-		- Section General
-		- Custom Blocks Section
-		- Content Slider Section
-			- Content Slider Navigation
-			- Content Slides Container
-			- Portfolio Section
-			- Blog Post Section
-		- Call to Action Section
-		- Clients Section
-		- Services Section
-		- Testimonials Section
-			- Testimonials Slider
-		- Related Works Section
-		- Our Team Section
-		- 404 Error Page
-		- Testimonials
-		- Contact Form
-	3.7 Sidebars
-		- Right Sidebar
-		- Left Sidebar
-	3.8 Footer
-	3.9 Footer Bottom
-		- Copyright
-		- Footer menu
-		
-4. PORTFOLIO STYLES
-	-General
-	4.1 Filter
-	4.2 Portfolio Two Columns
-	4.3 Portfolio Three Columns
-	4.4 Portfolio Four Columns
-	4.5 Portfolio Single
-	
-5. WIDGET STYLES
-	- Widget General
-	- Sidebar Widget General
-	- Footer Widget General
-	5.1 Categories / Archives Widget
-	5.2 Search Form Widget
-	5.3 Text Widget
-	5.4 Popular Posts / Recent Posts Widget
-	5.5 Recent Comments Widget
-	5.6 Video Widget
-	5.7 Contact Info Widget
-	5.8 Tags Widget
-	5.9 Twitter Widget
-	5.10 Flickr Widget
-	5.11 Social Media Widget
-	5.12 Google Map Widget
-	
-6. BLOG STYLES
-	- General
-	- Blog Slider
-	6.1 Blog Single Post
-	6.2 Post Navigation
-	6.3 Pagination
-	6.4 Comments List
-	6.5 Comments Form
-	
-7. EXTENDED TYPOGRAPHY & SHORTCODES
-	7.1 Blockquote / Pullquote
-	7.2 Dropcap
-	7.3 Text Highlights
-	7.4 Code & Pre
-	7.5 List Styles
-	7.6 Icon Boxes
-	7.7 Tabs & Toggles & Accordion
-		- Tabs
-			- Horizontal Tabs
-			- Vertical Tabs
-		- Toggles
-		- Accordions
-		
-8. ANIMATED SCROLL TO TOP
-
-------------------------------------------------*/
-
-/*====================================================================*/
-/* 1. IMPORT SECTION */
-/*====================================================================*/
-@import url("wide.css");
-
-/*====================================================================*/
-/* 2. GENERAL TYPOGRAPHY */
-/*====================================================================*/
-/*----------------------------------------------*/
-/* 2.1 Global Reset & Clearfix (http://meyerweb.com/eric/tools/css/reset/) */
-/*----------------------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border: 0;
@@ -185,11 +43,7 @@ table {
 
 .clearfix { zoom: 1; /* IE < 8 */ }
 	
-/*----------------------------------------------*/
-/* 2.2 @Font Face */
-/*----------------------------------------------*/
-/* Sosa Icon Font
----------------------------------------------------------- */
+
 @font-face {
     font-family: 'sosa';
     src: url('fonts/sosa-icon-font/sosa.eot');
@@ -201,16 +55,13 @@ table {
     font-style: normal;
 }
 
-/*----------------------------------------------*/
-/* 2.3 General Styles */
-/*----------------------------------------------*/
+
 html { -webkit-text-size-adjust: none; }
 
 body {
-	background-image: url('../images/patterns/pattern20.png');
 	background-position: 0 0;
 	background-repeat: repeat;
-	background-color: #c71219;
+	background-color: #000;
 	font: 12px/22px "Open Sans", "Arial", "Helvetica", sans-serif;
 	font-weight: 400;
 	color: #626364;
@@ -260,7 +111,7 @@ hr {
 
 a { 
 	background: none; 
-	color: #c71219; 
+	color: #f6731d; 
 	text-decoration: none; 
 	outline: none; 
 	cursor: pointer;
@@ -294,19 +145,18 @@ input[type="text"], input[type="email"], input[type="url"], input[type="tel"], i
 p, ul, ol, dl, table, fieldset, blockquote, pre, code { margin-bottom: 20px; }
 	
 ::selection {
-	background: #c71219;
+	background: #f6731d;
 	color: #fff;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #c71219;
+	background: #f6731d;
 	color: #fff;
 	text-shadow: none;
 }
 
-/* Links
----------------------------------------------------------- */
+
 a.link {
 	border-bottom: 1px dotted #e5e5e5;
 	padding: 4px 0 2px;
@@ -316,8 +166,8 @@ a.link {
 }
 	
 a.link:hover {
-	color: #c71219;
-	border-color: #c71219;
+	color: #f6731d;
+	border-color: #f6731d;
 }
 		
 span a.link { margin-left: 10px; }
@@ -326,7 +176,7 @@ a.goto {
 	background: transparent url('../images/goto_arrow.png') no-repeat scroll 100% 50%;
 	padding: 3px 25px 4px 0;
 	font-weight: 700;
-	color: #c71219;
+	color: #f6731d;
 	-webkit-transition: padding 0.1s ease-out;
 	-moz-transition: padding 0.1s ease-out;
 	-o-transition: padding 0.1s ease-out;
@@ -341,10 +191,9 @@ a.goto {
 
 a.goto:hover { padding-right: 28px; }
 
-.required { color: #c71219; }
+.required { color: #f6731d; }
 
-/* Floating & Alignment
----------------------------------------------------------- */
+
 .float-left, .align-left { float: left; }
 
 .float-right, .align-right { float: right; }
@@ -362,8 +211,7 @@ a.goto:hover { padding-right: 28px; }
 	
 .hidden { display: none; }
 
-/* Clear Floats
----------------------------------------------------------- */
+
 .clear {
 	clear: both;
 	display: block;
@@ -374,9 +222,7 @@ a.goto:hover { padding-right: 28px; }
 	font-size: 0;
 }
 	
-/*----------------------------------------------*/
-/* 2.4 Columns Styles */
-/*----------------------------------------------*/
+
 .one-half, .one-third, .two-third, .one-fourth, .three-fourth, .one-fifth, .two-fifth, .three-fifth, .four-fifth {
 	position: relative;
 	float: left;
@@ -398,9 +244,7 @@ a.goto:hover { padding-right: 28px; }
 	margin-right: 0 !important;
 }
 	
-/*----------------------------------------------*/
-/* 2.5 Dividers */
-/*----------------------------------------------*/
+
 .divider {
 	clear: both;
 	display: block;
@@ -431,11 +275,9 @@ a.goto:hover { padding-right: 28px; }
 	color: #777;
 }
 	
-.divider a.top:hover { color: #c71219; }
+.divider a.top:hover { color: #f6731d; }
 
-/*----------------------------------------------*/
-/* 2.6 Basic Lists */
-/*----------------------------------------------*/
+
 ul {
 	list-style-type: disc;
 	margin-left: 1.5em;
@@ -463,9 +305,7 @@ ol ol, ul ol { margin-left: 2.5em; }
 	
 ul ol, ol ul, ol ol, ul ul { margin-bottom: 0; }
 
-/*----------------------------------------------*/
-/* 2.7 Headings */
-/*----------------------------------------------*/
+
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 12px;
 	font-weight: 400;
@@ -499,9 +339,7 @@ h6 {
 	margin-bottom: 4px;
 }
 	
-/*----------------------------------------------*/
-/* 2.8 Images Styles */
-/*----------------------------------------------*/
+
 .preloading {
 	background: #fff url("../images/loading.gif") no-repeat 50% 50%;
 	display: block;
@@ -517,8 +355,7 @@ img.align-center, .wp-caption.align-center {
 	text-align: center;
 }
 	
-/* Image with Caption
----------------------------------------------------------- */
+
 .wp-caption {
 	margin-bottom: 10px;
 	text-align: center;
@@ -539,8 +376,7 @@ p.wp-caption-text {
 	color: #8d8d8d;
 }
 
-/* Image with Frame
----------------------------------------------------------- */
+
 .image-frame, .video-frame {
 	background-color: #fff;
 	display: block;
@@ -584,9 +420,7 @@ p.wp-caption-text {
 	
 .image-no-link { cursor: default; }
 
-/*----------------------------------------------*/
-/* 2.9 Video Styles */
-/*----------------------------------------------*/
+
 .video {
 	position: relative;
 	overflow: hidden;
@@ -604,9 +438,7 @@ p.wp-caption-text {
 	height: 100%;
 }
 
-/*----------------------------------------------*/
-/* 2.10 Forms Styles */
-/*----------------------------------------------*/
+
 fieldset {
 	border: 1px solid #e5e5e5;
 	padding: 1em;
@@ -666,7 +498,7 @@ input.text-input {
 	
 input.text-input:focus, textarea.textarea:focus, select:focus {
 	background: #fff;
-	border: 1px solid #c71219;
+	border: 1px solid #f6731d;
 	color: #777;
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
@@ -674,9 +506,7 @@ input.text-input:focus, textarea.textarea:focus, select:focus {
 	
 ::-webkit-input-placeholder, input:-moz-placeholder { color: #c2c2c2; }
 	
-/*----------------------------------------------*/
-/* 2.11 Tables Styles */
-/*----------------------------------------------*/
+
 table, th, td { vertical-align: middle; }
 	
 .table-style {
@@ -728,9 +558,7 @@ table, th, td { vertical-align: middle; }
 	font-style: italic;
 }
 	
-/*----------------------------------------------*/
-/* 2.12 Pricing Tables */
-/*----------------------------------------------*/
+
 .pricing-table {
 	position: relative;
 	margin: 50px 0 20px;
@@ -862,9 +690,9 @@ table, th, td { vertical-align: middle; }
 }
 
 .featured .column-header {
-	background: #c71219;
+	background: #f6731d;
 	border-left: 0 none;
-	border-top: 2px solid #c71219;
+	border-top: 2px solid #f6731d;
 	height: 145px;
 	min-height: 145px;
 }
@@ -875,7 +703,7 @@ table, th, td { vertical-align: middle; }
 	background: #fff;
 	padding: 5px 0;
 	font-size: 16px;
-	color: #c71219;
+	color: #f6731d;
 }
 
 .featured .price {
@@ -884,13 +712,11 @@ table, th, td { vertical-align: middle; }
 }
 
 .featured .column-footer {
-	border-bottom: 2px solid #c71219;
+	border-bottom: 2px solid #f6731d;
 	padding: 15px 20px 25px;
 }
 
-/*----------------------------------------------*/
-/* 2.13 Styled Boxes */
-/*----------------------------------------------*/
+
 .info-box, .success-box, .error-box, .warning-box {
 	border: 1px solid #e5e5e5;
 	margin-bottom: 20px;
@@ -952,8 +778,7 @@ table, th, td { vertical-align: middle; }
 
 .warning-box .message-box .close { background-image: url('../images/icons/message_box_icons/warning_close.png'); }
 
-/* Framed Box
----------------------------------------------------------- */
+
 .framed-box {
 	background: #f3f3f3 url('../images/bg_dark.png') repeat scroll 0 0;
 	position: relative;
@@ -978,9 +803,7 @@ table, th, td { vertical-align: middle; }
 	left: -9px;
 }
 	
-/*----------------------------------------------*/
-/* 2.14 Buttons Styles */
-/*----------------------------------------------*/
+
 button, .button, a.button, .button span {
 	display: inline-block;
 	vertical-align: middle;
@@ -994,7 +817,7 @@ button, .button, a.button, .button span {
 	
 button, .button, a.button {
 	white-space: nowrap;
-	background: #c71219;
+	background: #f6731d;
 	position: relative;
 	overflow: visible;
 	margin: 0 5px 20px 0;
@@ -1060,10 +883,9 @@ a.button:hover span, .button:hover span { color: #fff; }
 	
 .ie7 .button.large span { padding: 0.4em 1em 0.8em; }
 	
-/* Buttons Color Scheme
----------------------------------------------------------- */
+
 .button.black { background-color: #101010; }
-.button.black:hover { background: #c71219; }
+.button.black:hover { background: #f6731d; }
 .button.black span { color: #fff; }
 	
 .button.gray { background-color: #ddd; }
@@ -1083,9 +905,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 .button.coffee { background-color: #d6a581; }
 .button.rosy { background-color: #F56C7e; }
 	
-/*====================================================================*/
-/* 3. SITE STRUCTURE */
-/*====================================================================*/
+
 #page-wrap {
 	background: #fff url('../images/bg.png') repeat scroll 0 0;
 	position: relative;
@@ -1109,9 +929,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 	
 #content, #sidebar { position: relative; }
 	
-/*----------------------------------------------*/
-/* 3.1 Header */
-/*----------------------------------------------*/
+
 #header {
 	display: block;
 	position: relative;
@@ -1121,8 +939,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 
 #header .container { padding: 0 0 30px 0; }
 	
-/* Logo
----------------------------------------------------------- */
+
  #logo {
 	margin-top: 0px;
 	float: left;
@@ -1135,9 +952,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 	font-weight: 800;
 }
 		
-/*----------------------------------------------*/
-/* 3.2 Navigation */
-/*----------------------------------------------*/
+
 #navigation {
 	position: relative;
 	float: right;
@@ -1248,16 +1063,15 @@ a.button:hover span, .button:hover span { color: #fff; }
 }
 
 .ddsmoothmenu ul li ul li a:hover, .ddsmoothmenu ul li ul li a.current {
-	background: #c71219;
-	border-top: 1px solid #c71219;
-	border-bottom: 1px solid #c71219;
+	background: #f6731d;
+	border-top: 1px solid #f6731d;
+	border-bottom: 1px solid #f6731d;
 }
 
 /* Holly Hack for IE */
 * html .ddsmoothmenu { height: 1%;} /* Holly Hack for IE7 and below */
 
 
-/* ######### CSS classes applied to down and right arrow images  ######### */
 
 .downarrowclass {
 	display: none;
@@ -1273,7 +1087,6 @@ a.button:hover span, .button:hover span { color: #fff; }
 	right: 5px;
 }
 
-/* ######### CSS for shadow added to sub menus  ######### */
 
 .ddshadow { /* shadow for NON CSS3 capable browsers */
 	position: absolute;
@@ -1284,13 +1097,11 @@ a.button:hover span, .button:hover span { color: #fff; }
 	background: silver;
 }
 
-.toplevelshadow { /* shadow opacity for NON CSS3 capable browsers. Doesn't work in IE */
+.toplevelshadow { 
 	opacity: 0.8;
 }	
 	
-/*----------------------------------------------*/
-/* 3.3 Tiny Navigation */
-/*----------------------------------------------*/
+
 .tinynav {
 	display: none;
 	float: left;
@@ -1302,9 +1113,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 	border-radius: 3px;
 }
 
-/*----------------------------------------------*/
-/* 3.4 Intro */
-/*----------------------------------------------*/
+
 .page-heading {
 	background: transparent url('../images/custom_blocks_bg.png') repeat-y scroll 45% 0;
 	position: relative;
@@ -1319,8 +1128,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 	padding: 15px 0;
 }
 					
-/* Page Title
----------------------------------------------------------- */
+
 #page-title { float: left; }
 	
 .page-title {
@@ -1333,8 +1141,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 	color: #f6f6f6;
 }
 	
-/* Page Description
----------------------------------------------------------- */
+
 .page-description {
 	margin-bottom: 35px;
 	text-align: center;
@@ -1367,9 +1174,7 @@ a.button:hover span, .button:hover span { color: #fff; }
 	border-top: 1px solid #e5e5e5;
 }
 
-/*----------------------------------------------*/
-/* 3.5 FlexSlider */
-/*----------------------------------------------*/
+
 .slider-container {
 	background: transparent;
 	display: block;
@@ -1378,16 +1183,14 @@ a.button:hover span, .button:hover span { color: #fff; }
 	z-index: 1;
 }
 	
-/* Browser Resets
----------------------------------------------------------- */
+
 .slides, .flex-control-nav, .flex-direction-nav {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-/* FlexSlider Necessary Styles
----------------------------------------------------------- */
+
 .flexslider {
 	background: transparent;
 	position: relative;
@@ -1426,9 +1229,7 @@ html[xmlns] .slides { display: block; }
 
 * html .slides { height: 1%; }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
+
 .no-js .slides > li:first-child { display: block; }
 
 .flex-viewport { max-height: 2000px; }
@@ -1437,8 +1238,7 @@ html[xmlns] .slides { display: block; }
 
 .flexslider .slides { zoom: 1; }
 
-/* Direction Navigation
----------------------------------------------------------- */
+
 .flex-direction-nav { *height: 0; }
 
 .flex-direction-nav li { margin: 0; }
@@ -1478,7 +1278,7 @@ html[xmlns] .slides { display: block; }
 	left: 30px;
 }
 
-.flexslider .flex-next:hover, .flexslider .flex-prev:hover { background-color: #c71219; }
+.flexslider .flex-next:hover, .flexslider .flex-prev:hover { background-color: #f6731d; }
 
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 .flex-direction-nav .flex-disabled {
@@ -1487,8 +1287,7 @@ html[xmlns] .slides { display: block; }
 	cursor: default;
 }
 
-/* Control Navigation
----------------------------------------------------------- */
+
 .flex-control-nav {
 	width: 100%;
 	position: absolute;
@@ -1534,8 +1333,7 @@ html[xmlns] .slides { display: block; }
 	cursor: default;
 }
 
-/* Slider Caption
----------------------------------------------------------- */
+
 .slider-caption {
 	background: #101010;
 	background: rgba(0, 0, 0, 0.8);
@@ -1559,13 +1357,10 @@ html[xmlns] .slides { display: block; }
 	
 .no-js .slider-caption { visibility: hidden; }
 	
-/*----------------------------------------------*/
-/* 3.6 Content */
-/*----------------------------------------------*/
+
 #content { padding: 0 0 50px; }
 	
-/* Section General
----------------------------------------------------------- */
+
 .section-wrap { margin: 0 0 55px; }
 	
 .section-wrap:last-child { margin-bottom: 20px; }
@@ -1599,8 +1394,7 @@ html[xmlns] .slides { display: block; }
 	padding: 0 10px;
 }
 
-/* Custom Blocks Section
----------------------------------------------------------- */
+
 .custom-blocks {
 	background: transparent url('../images/custom_blocks_bg.png') repeat-y scroll 48% 0;
 	position: relative;
@@ -1638,7 +1432,7 @@ html[xmlns] .slides { display: block; }
 	transition: all 0.2s ease-out;
 }
 
-.custom-blocks .block a:hover { background: #c71219; }
+.custom-blocks .block a:hover { background: #f6731d; }
 
 .custom-blocks .block:last-child a {
 	background-image: url('../images/block_corner.png');
@@ -1679,11 +1473,9 @@ html[xmlns] .slides { display: block; }
 	height: 40px;
 }
 	
-/* Content Slider Section
----------------------------------------------------------- */
+
 .content-slider { position: relative; }
 
-/* Content Slider Navigation */
 #content-slider-nav {
 	position: relative;
 	margin-bottom: 20px;
@@ -1768,7 +1560,7 @@ html[xmlns] .slides { display: block; }
 	text-transform: uppercase;
 }
 
-#content-slider-nav .pagination li a:hover strong { color: #c71219; }
+#content-slider-nav .pagination li a:hover strong { color: #f6731d; }
 
 #content-slider-nav .pagination li.current a strong, #content-slider-nav .pagination li.current a:hover strong { color: #f6f6f6; }
 
@@ -1782,7 +1574,7 @@ html[xmlns] .slides { display: block; }
 
 #content-slider-nav .pagination li.current a small { color: #a5a5a5; }
 
-/* Content Slides Container */
+
 .content-slider .slides_container {
 	display: none;
 	padding: 0 10px;
@@ -1810,7 +1602,7 @@ html[xmlns] .slides { display: block; }
 	height: auto;
 }
 
-/* Blog Post Section */
+
 .content-slider .post-wrap img { height: auto; }
 
 .content-slider .post-wrap .post-feature { margin-bottom: 10px; }
@@ -1851,8 +1643,7 @@ html[xmlns] .slides { display: block; }
 	margin: 0;
 }
 
-/* Call to Action Section
----------------------------------------------------------- */
+
 .call-to-action {
 	background: #f3f3f3 url('../images/bg_dark.png') repeat scroll 0 0;
 	border: 1px solid #e5e5e5;
@@ -1881,8 +1672,7 @@ html[xmlns] .slides { display: block; }
 
 .call-to-action .button { margin: 10px 0; }
 
-/* Clients Section
----------------------------------------------------------- */
+
 .clients-list {
 	display: table;
 	margin: 0 auto;
@@ -1915,12 +1705,10 @@ html[xmlns] .slides { display: block; }
 
 .clients-wrap .clients-list a img { width: 100%; max-width: 100%; }
 	
-/* Services Section
----------------------------------------------------------- */
+
 .services-wrap ul { margin-bottom: 1em; }
 	
-/* Testimonials Section
----------------------------------------------------------- */
+
 .testimonials { margin-bottom: 20px; }
 
 .testimonials .bubble {
@@ -1994,8 +1782,8 @@ html[xmlns] .slides { display: block; }
 }
 	
 .author-name a:hover {
-	border-bottom: 1px dotted #c71219;
-	color: #c71219;
+	border-bottom: 1px dotted #f6731d;
+	color: #f6731d;
 }
 
 .author cite {
@@ -2005,7 +1793,7 @@ html[xmlns] .slides { display: block; }
 	color: #8d8d8d;
 }
 
-/* Testimonials Slider */
+
 .testimonials-slider { position: relative; }
 
 .testimonials-slider .slides {
@@ -2044,12 +1832,10 @@ html[xmlns] .slides { display: block; }
 
 .testimonials-slider .flex-direction-nav .flex-next:hover, .testimonials-slider .flex-direction-nav .flex-prev:hover { background-color: transparent; }
 
-/* Related Works Section
----------------------------------------------------------- */
+
 .related-work-wrap .portfolio-item { margin-bottom: 0; }
 	
-/* Our Team Section
----------------------------------------------------------- */
+
 .member-profile {
 	position: relative;
 	margin-bottom: 20px;
@@ -2154,8 +1940,7 @@ html[xmlns] .slides { display: block; }
 	
 .team-member .social-wrap li { margin-bottom: 0; }
 		
-/* 404 Error Page
----------------------------------------------------------- */
+
 .error-404 { text-align: center; }
 	
 .error-404 span.text-404 {
@@ -2181,8 +1966,7 @@ html[xmlns] .slides { display: block; }
 	
 .error-404 button span { text-shadow: none; }
 	
-/* Contact Form
----------------------------------------------------------- */
+
 .contact-form .text-input {
 	height: 25px;
 	line-height: 25px;
@@ -2200,26 +1984,19 @@ html[xmlns] .slides { display: block; }
 	height: 200px;
 }
 	
-/*----------------------------------------------*/
-/* 3.7 Sidebars */
-/*----------------------------------------------*/
+
 .right-sidebar #main-content, .left-sidebar #main-content { width: 700px; }
 .right-sidebar #sidebar, .left-sidebar #sidebar { width: 220px; }
 
 
-/* Right Sidebar
----------------------------------------------------------- */
 .right-sidebar #main-content { float: left; }
 .right-sidebar #sidebar { float: right; }
 	
-/* Left Sidebar
----------------------------------------------------------- */
+
 .left-sidebar #main-content { float: right; }
 .left-sidebar #sidebar { float: left; }
 	
-/*----------------------------------------------*/
-/* 3.8 Footer */
-/*----------------------------------------------*/
+
 #footer, #footer a, #footer a.goto:hover, #footer-bottom, .copyright a, .footer-menu li a { color: #a5a5a5; }
 
 #footer {
@@ -2235,9 +2012,7 @@ html[xmlns] .slides { display: block; }
 	display: inline-block;
 }
 
-/*----------------------------------------------*/
-/* 3.9 Footer Bottom */
-/*----------------------------------------------*/
+
 #footer-bottom {
 	background: #090909;
 	font-size: 11px;
@@ -2248,8 +2023,7 @@ html[xmlns] .slides { display: block; }
 	padding: 15px 0;
 }
 
-/* Copyright
----------------------------------------------------------- */
+
 .copyright {
 	float: left;
 	margin: 0;
@@ -2258,8 +2032,7 @@ html[xmlns] .slides { display: block; }
 
 .copyright a:hover, .footer-menu li a:hover { color: #fff; }
 
-/* Footer Menu
----------------------------------------------------------- */
+
 .footer-menu { float: left; }
 	
 .footer-menu ul {
@@ -2275,11 +2048,7 @@ html[xmlns] .slides { display: block; }
 	line-height: 18px;
 }
 	
-/*====================================================================*/
-/* 4. PORTFOLIO STYLES */
-/*====================================================================*/
-/* General
----------------------------------------------------------- */
+
 .portfolio-container {
 	margin: 0 -30px 0 0;
 	padding: 0;
@@ -2327,7 +2096,7 @@ html[xmlns] .slides { display: block; }
 
 .portfolio-item:hover .post-info {
 	background: #fff;
-	border-bottom: 1px solid #c71219;
+	border-bottom: 1px solid #f6731d;
 }
 
 .portfolio-item .post-info .post-title {
@@ -2347,7 +2116,7 @@ html[xmlns] .slides { display: block; }
 	padding: 10px 0;
 }
 
-.portfolio-item .post-info a:hover .post-title { color: #c71219; }
+.portfolio-item .post-info a:hover .post-title { color: #f6731d; }
 
 .portfolio-item img {
 	width: 100%;
@@ -2386,15 +2155,13 @@ html[xmlns] .slides { display: block; }
 	transition: all 0.2s ease-out;
 }
 	
-.portfolio-icons a:hover { background-color: #c71219; }
+.portfolio-icons a:hover { background-color: #f6731d; }
 	
 .portfolio-icons a.image-hover { background-position: 8px 8px; }
 .portfolio-icons a.link-hover { background-position: 8px -28px; }
 .portfolio-icons a.video-hover { background-position: 8px -64px; }
 
-/*----------------------------------------------*/
-/* 4.1 Filter */
-/*----------------------------------------------*/
+
 .filter {
 	display: block;
 	margin: 0 0 35px 0;
@@ -2445,29 +2212,20 @@ html[xmlns] .slides { display: block; }
 .portfolio-filter li a.selected { background-position: center 100%; }
 	
 .portfolio-filter li a.selected span, .portfolio-filter li a:hover span {
-	background: #c71219;
+	background: #f6731d;
 	color: #fff;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-/*----------------------------------------------*/
-/* 4.2 Portfolio Two Columns */
-/*----------------------------------------------*/
 .portfolio-two-columns .portfolio-item { width: 465px; }
 
-/*----------------------------------------------*/
-/* 4.3 Portfolio Three Columns */
-/*----------------------------------------------*/
+
 .portfolio-three-columns .portfolio-item { width: 300px; }
 	
-/*----------------------------------------------*/
-/* 4.4 Portfolio Four Columns */
-/*----------------------------------------------*/
+
 .portfolio-four-columns .portfolio-item { width: 217px; }
 
-/*----------------------------------------------*/
-/* 4.5 Portfolio Single */
-/*----------------------------------------------*/
+
 #portfolio-single { padding-bottom: 30px; }
 
 #portfolio-single .post-feature, .portfolio-slider { margin-bottom: 40px; }
@@ -2521,11 +2279,7 @@ html[xmlns] .slides { display: block; }
 	border-radius: 10px;
 }
 
-/*====================================================================*/
-/* 5. WIDGET STYLES */
-/*====================================================================*/
-/* Widget General
----------------------------------------------------------- */
+
 .widget {
 	display: block;
 	margin-bottom: 20px;
@@ -2557,8 +2311,7 @@ html[xmlns] .slides { display: block; }
 
 .widget .accordion, .widget .testimonials { margin-bottom: 0; }
 	
-/* Sidebar Widget General
----------------------------------------------------------- */
+
 #sidebar .widget{
 	display: block;
 	margin-bottom: 40px;
@@ -2580,10 +2333,9 @@ html[xmlns] .slides { display: block; }
 	color: #626364;
 }
 	
-#sidebar .subnav-widget li a:hover, #sidebar .categories-widget li a:hover, #sidebar .archives-widget li a:hover, #sidebar .meta-widget li a:hover, #sidebar .popular-posts-widget li a:hover, #sidebar .recent-posts-widget li a:hover, #sidebar .recent-comments-widget li a:hover { color: #c71219; }
+#sidebar .subnav-widget li a:hover, #sidebar .categories-widget li a:hover, #sidebar .archives-widget li a:hover, #sidebar .meta-widget li a:hover, #sidebar .popular-posts-widget li a:hover, #sidebar .recent-posts-widget li a:hover, #sidebar .recent-comments-widget li a:hover { color: #f6731d; }
 	
-/* Footer Widget General
----------------------------------------------------------- */
+
 #footer .widget{ margin-bottom: 30px; }
 	
 #footer .widget-title {
@@ -2611,9 +2363,7 @@ html[xmlns] .slides { display: block; }
 	overflow: hidden;
 }
 	
-/*----------------------------------------------*/
-/* 5.1 Categories / Archives Widget */
-/*----------------------------------------------*/
+
 .categories-widget li a, .archives-widget li a {
 	position: relative;
 }
@@ -2638,8 +2388,8 @@ html[xmlns] .slides { display: block; }
 }
 
 .categories-widget li a:hover span, .archives-widget li a:hover span {
-	background: #c71219;
-	border: 1px solid #c71219;
+	background: #f6731d;
+	border: 1px solid #f6731d;
 	color: #fff;
 }
 
@@ -2649,14 +2399,12 @@ html[xmlns] .slides { display: block; }
 }
 
 #footer .categories-widget li a:hover span, #footer .archives-widget li a:hover span {
-	background: #c71219;
-	border: 1px solid #c71219;
+	background: #f6731d;
+	border: 1px solid #f6731d;
 	color: #fff;
 }
 
-/*----------------------------------------------*/
-/* 5.2 Search Form Widget */
-/*----------------------------------------------*/
+
 #search-form-widget, #search-form {
 	position: relative;
 	margin: 0;
@@ -2672,7 +2420,7 @@ input.search-input {
 	
 input.search-input:focus {
 	background: #fff;
-	border: 1px solid #c71219;
+	border: 1px solid #f6731d;
 	color: #777;
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
@@ -2692,15 +2440,11 @@ input.search-submit {
 	text-indent: -9999px;
 }
 
-/*----------------------------------------------*/
-/* 5.3 Text Widget */
-/*----------------------------------------------*/
+
 .text-widget p { margin-bottom: 8px; }
 .text-widget img { margin-bottom: 10px; }
 	
-/*----------------------------------------------*/
-/* 5.4 Popular Posts / Recent Posts Widget */
-/*----------------------------------------------*/
+
 .posts-list .thumbnail, .recent-comments-list .thumbnail {
 	display: block;
 	position: relative;
@@ -2734,13 +2478,11 @@ input.search-submit {
 	color: #8d8d8d;
 }
 	
-#sidebar .posts-list .post-info .post-meta a:hover { color: #c71219; }
+#sidebar .posts-list .post-info .post-meta a:hover { color: #f6731d; }
 
 #footer .posts-list .post-info .post-meta span, #footer .posts-list .post-info .post-meta a { color: #777; }
 
-/*----------------------------------------------*/
-/* 5.5 Recent Comments Widget */
-/*----------------------------------------------*/
+
 .recent-comments-list li { color: #8d8d8d; }
 	
 .recent-comments-list .post-info { overflow: hidden; }
@@ -2751,14 +2493,10 @@ input.search-submit {
 	font-weight: 400;
 }
 	
-/*----------------------------------------------*/
-/* 5.6 Video Widget */
-/*----------------------------------------------*/
+
 .video-widget .video { margin: 0; }
 	
-/*----------------------------------------------*/
-/* 5.7 Contact Info Widget */
-/*----------------------------------------------*/
+
 .contact-info-widget {
 	overflow: hidden;
 	padding-right: 20px;
@@ -2806,9 +2544,7 @@ input.search-submit {
 	
 #sidebar .contact-info-widget, #footer .contact-info-widget { padding: 0; }
 	
-/*----------------------------------------------*/
-/* 5.8 Tags Widget */
-/*----------------------------------------------*/
+
 .tag-cloud { padding: 3px 0 6px; }
 
 .tag-cloud a {
@@ -2827,8 +2563,8 @@ input.search-submit {
 }
 		
 .tag-cloud a:hover {
-	background: #c71219;
-	border: 1px solid #c71219;
+	background: #f6731d;
+	border: 1px solid #f6731d;
 	color: #fff;
 }
 
@@ -2838,13 +2574,11 @@ input.search-submit {
 }
 
 #footer .tag-cloud a:hover {
-	background: #c71219;
-	border: 1px solid #c71219;
+	background: #f6731d;
+	border: 1px solid #f6731d;
 }
 	
-/*----------------------------------------------*/
-/* 5.9 Twitter Widget */
-/*----------------------------------------------*/
+
 .twitter-wrap p.loading {
 	background: transparent url('../images/loading_small.gif') no-repeat scroll 0 4px;
 	padding-left: 25px;
@@ -2916,8 +2650,8 @@ input.search-submit {
 }
 	
 #content .section-wrap .follow-us a:hover {
-	color: #c71219;
-	border-bottom: 1px dotted #c71219;
+	color: #f6731d;
+	border-bottom: 1px dotted #f6731d;
 }
 	
 #sidebar .twitter-wrap li {
@@ -2963,9 +2697,7 @@ input.search-submit {
 	color: #fff;
 }
 
-/*----------------------------------------------*/
-/* 5.10 Flickr Widget */
-/*----------------------------------------------*/
+
 .flickr-wrap {
 	position: relative;
 	overflow: hidden;
@@ -2997,9 +2729,7 @@ input.search-submit {
 	height: 65px;
 }
 	
-/*----------------------------------------------*/
-/* 5.11 Social Media Widget */
-/*----------------------------------------------*/
+
 .social-media-widget .social {
 	overflow: hidden;
 	margin: 0;
@@ -3114,20 +2844,14 @@ input.search-submit {
 #footer-bottom .social a.dropbox { background-position: -486px 0; }
 #footer-bottom .social a.evernote { background-position: -504px 0; }
 
-/*----------------------------------------------*/
-/* 5.12 Google Map Widget */
-/*----------------------------------------------*/
+
 .google-map {
 	background: #f3f3f3;
 	height: 400px;
 	margin-bottom: 40px;
 }
 	
-/*====================================================================*/
-/* 6. BLOG STYLES */
-/*====================================================================*/
-/* General
----------------------------------------------------------- */
+
 .blog-post {
 	background: #fff;
 	margin-bottom: 60px;
@@ -3175,7 +2899,7 @@ input.search-submit {
 	
 .post-title a { color: #101010; }
 	
-.post-title a:hover { color: #c71219; }
+.post-title a:hover { color: #f6731d; }
 
 .post-meta {
 	display: block;
@@ -3216,7 +2940,7 @@ input.search-submit {
 	
 .post-meta a { color: #8d8d8d; }
 	
-.post-meta a:hover { color: #c71219; }
+.post-meta a:hover { color: #f6731d; }
 	
 .post-meta .meta-list .meta-author { background: transparent url('../images/meta_author.png') no-repeat scroll 0 5px; }
 
@@ -3228,8 +2952,7 @@ input.search-submit {
 	
 .post-meta .meta-list .meta-comments { background: transparent url('../images/meta_comments.png') no-repeat scroll 0 5px; }
 	
-/* Blog Slider
----------------------------------------------------------- */
+
 .blog-slider { margin: 0 0 20px 0; }
 
 .blog-slider .flex-next, .blog-slider .flex-prev {
@@ -3248,17 +2971,12 @@ input.search-submit {
 	border-radius: 0 3px 3px 0;
 }
 
-/*----------------------------------------------*/
-/* 6.1 Blog Single Post */
-/*----------------------------------------------*/
+
 .single-post .post {
 	margin-bottom: 0;
 	border: none;
 }
-	
-/*----------------------------------------------*/
-/* 6.2 Post Navigation */
-/*----------------------------------------------*/
+
 .post-nav {
 	list-style-type: none;
 	margin: 0 0 50px 0;
@@ -3303,7 +3021,7 @@ input.search-submit {
 }
 	
 .post-nav a:hover .arrow, .post-nav a:hover .grid {
-	background-color: #c71219;
+	background-color: #f6731d;
 	filter: alpha(opacity=100);
 	opacity: 1;
 }
@@ -3335,9 +3053,7 @@ a.main-grid {
 
 a.main-grid .grid { background-image: url('../images/grid.png'); }
 	
-/*----------------------------------------------*/
-/* 6.3 Pagination */
-/*----------------------------------------------*/
+
 #pagination {
 	display: block;
 	margin: 30px 0 10px;
@@ -3392,9 +3108,7 @@ a.main-grid .grid { background-image: url('../images/grid.png'); }
 	color: #fff;
 }
 
-/*----------------------------------------------*/
-/* 6.4 Comments List */
-/*----------------------------------------------*/
+
 #comments { margin-bottom: 20px; }
 
 .comment-title { margin-bottom: 20px; }
@@ -3444,10 +3158,10 @@ a.main-grid .grid { background-image: url('../images/grid.png'); }
 	
 .comment-info cite a { color: #101010; }
 	
-.comment-info cite a:hover { color: #c71219; }
+.comment-info cite a:hover { color: #f6731d; }
 	
 .comment-info cite .author {
-	background: #c71219;
+	background: #f6731d;
 	margin-left: 5px;
 	padding: 2px 3px;
 	font-size: 8px;
@@ -3469,9 +3183,7 @@ a.main-grid .grid { background-image: url('../images/grid.png'); }
 	margin: 0 0 0 60px;
 }
 
-/*----------------------------------------------*/
-/* 6.5 Comments Form */
-/*----------------------------------------------*/
+
 .respond-title { float: left; }
 	
 .respond-note {
@@ -3502,12 +3214,7 @@ a.main-grid .grid { background-image: url('../images/grid.png'); }
 
 .ie7 #respond textarea { height: 168px; }
 	
-/*====================================================================*/
-/* 7. EXTENDED TYPOGRAPHY & SHORTCODES */
-/*====================================================================*/
-/*----------------------------------------------*/
-/* 7.1 Blockquote /Pullquote */
-/*----------------------------------------------*/
+
 blockquote, .pullquote-right, .pullquote-left {
 	background: none;
 	font: 15px/1.8em "PT Serif", "Georgia", "Times New Roman", Times, Serif;
@@ -3561,9 +3268,7 @@ blockquote cite {
 	width: 33%;
 }
 	
-/*----------------------------------------------*/
-/* 7.2 Dropcap */
-/*----------------------------------------------*/
+
 .dropcap {
 	float: left;
 	display: block; 
@@ -3577,7 +3282,7 @@ blockquote cite {
 }
 	
 .dropcap.circle {
-	background: #c71219;
+	background: #f6731d;
 	margin-top: 2px;
 	width: 41px;
 	height: 41px;
@@ -3595,7 +3300,7 @@ blockquote cite {
 }
 
 .dropcap.square {
-	background: #c71219;
+	background: #f6731d;
 	margin-top: 2px;
 	padding: 6px 12px;
 	font-size: 28px;
@@ -3610,11 +3315,9 @@ blockquote cite {
 	color: #101010;
 }
 	
-/*----------------------------------------------*/
-/* 7.3 Text Highlights */
-/*----------------------------------------------*/
+
 .highlight {
-	background: #c71219;
+	background: #f6731d;
 	color: #fff;
 	padding: 1px 5px;
 }
@@ -3626,11 +3329,8 @@ blockquote cite {
 	
 .highlight.dark { background: #101010; }
 	
-.colored { color: #c71219 !important; }
+.colored { color: #f6731d !important; }
 
-/*----------------------------------------------*/
-/* 7.4 Code & Pre */
-/*----------------------------------------------*/
 code, pre{
 	border: 1px solid #e5e5e5;
 	border-left: 3px solid #e5e5e5;
@@ -3645,9 +3345,7 @@ code { background: #f7f7f7; }
 	
 pre { background: transparent url("../images/code_bg.png") repeat scroll 0 0; }
 	
-/*----------------------------------------------*/
-/* 7.5 List Styles */
-/*----------------------------------------------*/
+
 ul.list-style-arrow, ul.list-style-arrow-2, ul.list-style-arrow-3, ul.list-style-arrow-4, ul.list-style-arrow-5, ul.list-style-check, ul.list-style-check-2, ul.list-style-plus, ul.list-style-dash, ul.list-style-circle, ul.list-style-square, ul.list-style-star {
 	list-style-type: none;
 	margin-left: 0;
@@ -3741,9 +3439,7 @@ ul.list-style-star li {
 	padding-left: 20px;
 }
 	
-/*----------------------------------------------*/
-/* 7.6 Icon Boxes */
-/*----------------------------------------------*/
+
 .icon-box {
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -3757,7 +3453,7 @@ ul.list-style-star li {
 
 .icon-box-title a { color: #101010; }
 
-.icon-box-title a:hover { color: #c71219; }
+.icon-box-title a:hover { color: #f6731d; }
 	
 .icon-box-content p { margin-bottom: 10px; }
 
@@ -3847,7 +3543,6 @@ ul.list-style-star li {
 	text-transform: uppercase;
 }
 
-/* Hover Style for all the items: blur, scale down*/
 .icon-box.blur {
 	-webkit-transform: scale(0.9);
 	-moz-transform: scale(0.9);
@@ -3881,7 +3576,6 @@ ul.list-style-star li {
 
 .icon-box.blur .icon-box-title { 	filter: alpha(opacity=50); opacity: 0.5; }
 
-/* Hover Style for single item: scale up */
 .icon-box.active {
 	background: #fff;
 	-webkit-transform: scale(1.05);
@@ -3902,13 +3596,9 @@ ul.list-style-star li {
 	transition: all .2s linear;
 }
 
-.icon-box.active .icon-font span { color: #c71219; }
+.icon-box.active .icon-font span { color: #f6731d; }
 
-/*----------------------------------------------*/
-/* 7.7 Tabs & Toggles & Accordions */
-/*----------------------------------------------*/
-/* Tabs
----------------------------------------------------------- */
+
 .tabs-container { margin-bottom: 20px; }
 
 .tabs li a {
@@ -3969,7 +3659,7 @@ ul.list-style-star li {
 }
 
 .h-tabs .tabs li a.current {
-	border-top: 2px solid #c71219;
+	border-top: 2px solid #f6731d;
 	border-bottom: 1px solid #f9f9f9;
 	margin: 0 0 -1px 0;
 	height: 32px;
@@ -3998,7 +3688,6 @@ ul.list-style-star li {
 	border-radius: 0 3px 3px 3px;
 }
 
-/* Vertical Tabs */
 .v-tabs .tabs {
 	list-style-type: none;
 	position: relative;
@@ -4027,7 +3716,7 @@ ul.list-style-star li {
 
 .v-tabs .tabs li a.current {
 	border-right: 1px solid #f9f9f9;
-	border-left: 2px solid #c71219;
+	border-left: 2px solid #f6731d;
 	margin-right: -2px;
 }
 
@@ -4052,7 +3741,6 @@ ul.list-style-star li {
 	border-radius: 0 3px 3px 3px;
 }
 
-/* Toggles / Accordions */
 .toggle-title, .accordion-title {
 	overflow: hidden;
 	border: 1px solid #e5e5e5;
@@ -4085,13 +3773,11 @@ ul.list-style-star li {
 	
 .toggle-content p, .accordion-content p { margin-bottom: 1em; }
 	
-/* Toggles */
 .toggle {
 	margin-bottom: 5px;
 	position: relative;
 }
 	
-/* Accordions */
 .accordion {
 	margin-bottom: 20px;
 	position: relative;
@@ -4101,9 +3787,7 @@ ul.list-style-star li {
 	
 .accordion .current { cursor: default; }
 	
-/*====================================================================*/
-/* 8. ANIMATED SCROLL TO TOP */
-/*====================================================================*/
+
 #scroll-top {
 	display: none;
 	position: fixed;
@@ -4134,7 +3818,77 @@ ul.list-style-star li {
 }
 	
 #scroll-top a:hover {
-	background-color: #c71219;
+	background-color: #f6731d;
 	filter: alpha(opacity=100);
 	opacity: 1;
+
+
+::selection {
+	background: #f6731d;
+	color: #fff;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #f6731d;
+	color: #fff;
+	text-shadow: none;
+}
+
+body, .featured .column-header, button, .button, a.button, .button.black:hover, .ddsmoothmenu ul li ul li a:hover, .ddsmoothmenu ul li ul li a.current, .flexslider .flex-next:hover, .flexslider .flex-prev:hover, .custom-blocks .block a:hover, .portfolio-icons a:hover, .portfolio-filter li a.selected span, .portfolio-filter li a:hover span, .categories-widget li a:hover span, .archives-widget li a:hover span, #footer .categories-widget li a:hover span, #footer .archives-widget li a:hover span, .tag-cloud a:hover, #footer .tag-cloud a:hover, .post-nav a:hover .arrow, .post-nav a:hover .grid, .page-list .current, .comment-info cite .author, .dropcap.circle, .dropcap.square, .highlight, #scroll-top a:hover {
+		background-color: #f6731d;
+}
+
+a, a.link:hover, .required, .divider a.top:hover, .featured .column-header, .featured .title, a.goto, #content-slider-nav .pagination li a:hover strong, .tag-line h1 span, .portfolio-item .post-info a:hover .post-title, #sidebar .subnav-widget li a:hover, #sidebar .categories-widget li a:hover, #sidebar .archives-widget li a:hover, #sidebar .meta-widget li a:hover, #sidebar .popular-posts-widget li a:hover, #sidebar .recent-posts-widget li a:hover, #sidebar .recent-comments-widget li a:hover, #sidebar .posts-list .post-info .post-meta a:hover, #content .section-wrap .follow-us a:hover, .social-media-widget ul li a:hover, .post-title a:hover, .post-meta a:hover, .author-name a:hover, .icon-box-title a:hover, .icon-box.active .icon-font span, .comment-info cite a:hover {
+		color: #f6731d;
+}
+
+a.link:hover, input.text-input:focus, textarea.textarea:focus, select:focus, .featured .column-header, .featured .column-footer, .ddsmoothmenu ul li ul li a:hover, .ddsmoothmenu ul li ul li a.current, .portfolio-item:hover .post-info, .categories-widget li a:hover span, .archives-widget li a:hover span, #footer .categories-widget li a:hover span, #footer .archives-widget li a:hover span, input.search-input:focus, .tag-cloud a:hover, #footer .tag-cloud a:hover, #content .section-wrap .follow-us a:hover, .author-name a:hover, .page-list .current, .h-tabs .tabs li a.current, .v-tabs .tabs li a.current {
+		border-color: #f6731d;
+}
+
+.h-tabs .tabs li a.current {
+	border-bottom: 1px solid #f9f9f9;
+}
+
+.v-tabs .tabs li a.current {
+	border-right: 1px solid #f9f9f9;
+}
+
+.featured .column-footer {
+	border-left: 1px solid #e5e5e5;
+}
+
+a.goto {
+	background: transparent url('../images/color/1/goto_arrow.png') no-repeat scroll 100% 50%;
+}
+
+.portfolio-filter li a  {
+	background: transparent url('../images/color/1/filter_arrow_active.png') no-repeat scroll center 0;
+}
+
+.widget-title, .blog-post .post-title {
+	-webkit-border-image: url('../images/color/1/image_border.png') 1 0;
+	-moz-border-image: url('../images/color/1/image_border.png') 1 0;
+	-o-border-image: url('../images/color/1/image_border.png') 1 0;
+	border-image: url('../images/color/1/image_border.png') 1 0;
+}
+
+#footer .widget-title {
+	-webkit-border-image: url('../images/color/1/image_border_footer.png') 1 0;
+	-moz-border-image: url('../images/color/1/image_border_footer.png') 1 0;
+	-o-border-image: url('../images/color/1/image_border_footer.png') 1 0;
+	border-image: url('../images/color/1/image_border_footer.png') 1 0;
+}
+
+.toggle-title, .accordion-title {
+	background: #f3f3f3 url('../images/color/1/expand.png') no-repeat scroll 12px 11px;
+}
+
+.toggle-active, .accordion .current {
+	background:  #fff url('../images/color/1/collapse.png') no-repeat scroll 12px 11px;
+}
+
+.colored {
+		color: #f6731d !important;
 }
