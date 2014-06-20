@@ -2872,6 +2872,7 @@ input.search-submit {
 .post-feature img {
 	display: block;
 	width: 100%;
+	height: 300px;
 }
 
 .post-feature .video { margin: 0; }
