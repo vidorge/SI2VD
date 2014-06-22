@@ -966,6 +966,10 @@ a.button:hover span, .button:hover span { color: #fff; }
 	font-weight: 700;
 }
 
+.en #navigation {
+	width: 593px;
+}
+
 .ddsmoothmenu{ width: auto; }
 
 .ddsmoothmenu ul{
