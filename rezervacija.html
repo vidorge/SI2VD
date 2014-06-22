@@ -94,18 +94,18 @@
 			</header>
 			<!-- / INTRO -->
 			
-			<div class="container">
+			<div class="container reservation">
 
 				<form name="rezervacija" action="mailto:atelje@212.rs" method="post">
 					
-					<label>
+					<label for="ime-prezime">
 						Ime i prezime:
-						<input name="ime-prezime" type="text">
+						<input name="ime-prezime" id="ime-prezime" type="text">
 					</label>
 					
-					<label>
+					<label for="broj-karata">
 						Broj karata:
-						<select name="broj-karata">
+						<select name="broj-karata" id="broj-karata">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -115,21 +115,22 @@
 						</select>
 					</label>
 					
-					<label>
+					<label for="inputDate">
 						Datum:
 						<input name="datum" class="inputDate" id="inputDate" value="20/06/2014" />
 					</label>
 					
-					<label>
+					<label for="mail">
 						E-mail:
-						<input name="mail" type="text">
+						<input name="mail" id="mail" type="text">
 					</label>
 
-					<label>
+					<label for="telefon">
 						Telefon:
-						<input name="telefon" type="text">
+						<input name="telefon" id="telefon" type="text">
 					</label>
 
+					<input type="submit" value="Rezervisi">
 				</form>
 				
 				<div class="clear"></div>
