@@ -142,8 +142,8 @@
 	isBadMSIE = ( isMSIE && isMSIE[0].match(/\d/)[0] < 9 ),
 	_lang = {
 			ans:{	// _lang.ans are shown during the display of .q-result, the answer result.
-				corrAns: "Correct answer(s):",
-				praise: 'Great Job. Right!',
+				corrAns: "The correct answer is:",
+				praise: 'Correct answer, congratulations!',
 				retry: 'Incorrect.<br/>Please try another answer.',
 				whyAns: "Info:",
 				yourAns: "Your Answer:"
@@ -154,7 +154,7 @@
 				del: [ "Delete", "Delete quiz" ],
 				help: [ "Help", 'Click for help'],
 				next: [ "Next", "Next question" ],
-				restart: [ "Restart", "Restart the quit over" ],
+				restart: [ "Try again", "Restart the quit over" ],
 				details: [ "Details", "View score report" ],
 				review: [ "Review", "Review Questions" ],
 				showOnlyMissed: [ " *", "Click to show only missed questions." ],
@@ -174,10 +174,10 @@
 				notObj: "Invalid quiz data structure. Must be an array or object."
 			},
 			stats:{
-				right: "Right",
-				rate: "Rate",
-				score: "Score",
-				wrong: "Wrong",
+				right: "Correct",
+				rate: "Incorrect",
+				score: "Total",
+				wrong: "Incorrect",
 				total: "Total",
 				tried: "Tried"
 			},
@@ -535,8 +535,8 @@
 				return [
 						(lang.stats.right + ": " + stats.numOfRight), 
 						(lang.stats.wrong + ": " + stats.numOfWrong),
-						(lang.stats.tried + ": " + stats.quesTried), 
-						(lang.stats.rate + ": " + stats.accurTxt()), 
+						//(lang.stats.tried + ": " + stats.quesTried), 
+						//(lang.stats.rate + ": " + stats.accurTxt()), 
 						(lang.stats.total + ": " + stats.percTxt())
 					].join('<br/>');
 			},
@@ -601,7 +601,7 @@
 			// changeQuizInfo(): Changes the main information for the quiz.
 			changeQuizInfo = function(){
 				setToBeginningView();
-				$( ".q-title", currQuiz).html( settings.title );
+				$( ".q-title", currQuiz).html( "<h1>" + settings.title + "</h1>" );
 				setHelpBtn();
 				if( settings.intro ){
 					$( ".q-prob", currQuiz ).hide();

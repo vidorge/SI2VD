@@ -6,7 +6,7 @@
 <head>
 
 	<!-- /* Title */ -->
-	<title>Kviz - Pozorište "Atelje 212"</title>
+	<title>Quiz - Theater "Atelje 212"</title>
 	
 	<!-- /* Meta Tags */ -->
 	<meta charset="utf-8">
@@ -48,27 +48,27 @@
 				<!-- NAVIGATION -->
 				<nav id="navigation" class="ddsmoothmenu">
 					<ul id="main-menu">
-						<li><a href="index.html" class="current"><span>Početna</span></a></li>
-						<li><a href="#"><span>O nama</span></a>
+						<li><a href="index.html" class="current"><span>Home</span></a></li>
+						<li><a href="#"><span>About us</span></a>
 							<ul>
-								<li><a href="istorija.html">Istorija</a></li>
-								<li><a href="nagrade.html">Nagrade i priznanja</a></li>
-								<li><a href="direktor.html">Direktor</a></li>
-								<li><a href="spisak-glumaca.html">Spisak glumaca</a></li>
-								<li><a href="spisak-gostiju.html">Spisak gostujucih glumaca</a></li>
-								<li><a href="izvestaj.html">Godisnji izvestaj</a></li>
-								<li><a href="kviz.html">Kviz</a></li>
+								<li><a href="istorija.html">History</a></li>
+								<li><a href="nagrade.html">Awards and honors</a></li>
+								<li><a href="direktor.html">Director</a></li>
+								<li><a href="spisak-glumaca.html">List of actors</a></li>
+								<li><a href="spisak-gostiju.html">List of guest actors</a></li>
+								<li><a href="izvestaj.html">Annual report</a></li>
+								<li><a href="kviz.html">Quiz</a></li>
 							</ul>
 						</li>
-						<li><a href="#"><span>Novosti</span></a>
+						<li><a href="#"><span>News</span></a>
 							<ul>
-								<li><a href="vesti.html">Vesti</a></li>
-								<li><a href="fotogalerija.html">Fotogalerija</a></li>
+								<li><a href="vesti.html">News</a></li>
+								<li><a href="fotogalerija.html">Photogallery</a></li>
 							</ul>
 						</li>
-						<li><a href="predstave.html"><span>Predstave</span></a></li>
-						<li><a href="repertoar.html"><span>Repertoar</span></a></li>
-						<li><a href="kontakt.html"><span>Kontakt</span></a></li>
+						<li><a href="predstave.html"><span>Plays</span></a></li>
+						<li><a href="repertoar.html"><span>Repertoire</span></a></li>
+						<li><a href="kontakt.html"><span>Contact</span></a></li>
 					</ul>
 				</nav>
 				<!-- / NAVIGATION -->
@@ -87,7 +87,7 @@
 				
 					<!-- PAGE TITLE -->
 					<div id="page-title">
-						<h1 class="page-title">Kviz</h1>
+						<h1 class="page-title">Quiz</h1>
 					</div>
 					<!-- / PAGE TITLE -->
 					
@@ -135,10 +135,9 @@
 	<script src="js/jquery.flexslider.min.js"></script>
 	<script src="js/jquery.fitvids.js"></script>
 	<script src="js/jquery.quicksand.js"></script>
-	<script src="js/jquery.gmap.min.js"></script>
 	<script src="js/custom.js"></script>
 	
-	<script src="js/jQuizMe-2.2.1_sr.js"></script>
+	<script src="js/jQuizMe-2.2.1_en.js"></script>
 
 	<script type="text/javascript">
 
@@ -147,17 +146,17 @@
 			var quiz = {
 				multiList: [
 					{
-						ques: "Ko je direktor pozoršta Atelje 212.",
+						ques: "Who is the director of theater Atelje 212.",
 						ans: "Ivana Dimić",
 						ansSel: ["Branislav Zeremski", "Nenad Jezdić", "Anica Dobra"]
 					},
 					{
-						ques: "Najbolja predstava po oceni publike (4,83) je \"Pazarni dan\"",
-						ans: "Netačno",
-						ansSel: ["Tačno"]
+						ques: "Best play in the opinion of the audience (4,83) is \"Pazarni dan\"",
+						ans: "False",
+						ansSel: ["True"]
 					},
 					{
-						ques: "Koliki je kapacitet za sedenje na Velikoj Sceni",
+						ques: "What is the seating capacity for the big stage",
 						ans: 385,
 						ansSel: [211, 642, 280]
 					}
@@ -165,7 +164,7 @@
 
 				fill: [
 					{
-						ques: "Koje godine je osnovano pozorište Atelje 212",
+						ques: "In what year was Theater Atelje 212 founded",
 						ans: 1956
 					}
 				]
@@ -174,7 +173,7 @@
 				allRandom: true,
 				review: false,
 				disableDelete: true,
-				title: "Koliko poznajete naše pozorište?"
+				title: "How do you know our theater?"
 			};
 			
 			$("#quizArea").jQuizMe(quiz, options);
