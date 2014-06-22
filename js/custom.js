@@ -1,4 +1,82 @@
+function changeLang( lang ) {
+
+	setCookie('lang', lang, 365);
+
+	window.location.href = 'index_' + getCookie('lang') + ".html";
+
+
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
 jQuery(document).ready(function($) {
+
+
+
+	// ------------------------------------------------------------------------------ //
+	// Templating
+	// ------------------------------------------------------------------------------ //
+
+	(function() {
+
+		$("#footer-bottom").load('templates/footer.html');
+
+		var langBar = '\
+		<div style="width:60px; height:100px; position: fixed; top:2px; right:2px; z-index:999;">\
+			<a href="#" onClick="changeLang(\'sr\');"> <img src="images/lang/rs.png" width="20" /> </a>\
+			<a href="#" onClick="changeLang(\'en\');"> <img src="images/lang/gb.png" width="20" style="margin-left:8px;" /> </a>\
+		</div>';
+
+		$("body").append( langBar );
+
+	})();
+
+
+	// ------------------------------------------------------------------------------ //
+	// Linking to Pages
+	// ------------------------------------------------------------------------------ //
+
+
+	
+	(function() {
+		
+		$("a").click( function (e) {
+
+			if ( $(this).attr("href").indexOf("html") >= 0 ) {
+
+				if ( getCookie('lang') == "" ) {
+					setCookie('lang', 'sr', 365);
+				}
+
+				var pageName = $(this).attr("href").split('.');
+				pageName = pageName[0];
+
+				window.location.href = pageName + '_' + getCookie('lang') + ".html";
+
+				e.preventDefault();	
+			}
+
+		});
+
+	})();
+	
+
+
 
 	// ------------------------------------------------------------------------------ //
 	// DDsmooth Drop-Down Menu //

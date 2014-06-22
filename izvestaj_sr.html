@@ -6,7 +6,7 @@
 <head>
 
 	<!-- /* Title */ -->
-	<title>Kviz - Pozorište "Atelje 212"</title>
+	<title>Godisnji izveštaj - Pozorište "Atelje 212"</title>
 	
 	<!-- /* Meta Tags */ -->
 	<meta charset="utf-8">
@@ -20,13 +20,11 @@
 	<!-- /* Stylesheets */ -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/prettyPhoto.css">
-	<link rel="stylesheet" href="css/jQuizMe.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
 	<!-- HTML5 Shiv, support for HTML5 elements in IE6-8  -->
 	<script src="js/modernizr.custom.js"></script>
-
 		
 </head>
 
@@ -48,8 +46,8 @@
 				<!-- NAVIGATION -->
 				<nav id="navigation" class="ddsmoothmenu">
 					<ul id="main-menu">
-						<li><a href="index.html" class="current"><span>Početna</span></a></li>
-						<li><a href="#"><span>O nama</span></a>
+						<li><a href="index.html"><span>Početna</span></a></li>
+						<li><a href="#" class="current"><span>O nama</span></a>
 							<ul>
 								<li><a href="istorija.html">Istorija</a></li>
 								<li><a href="nagrade.html">Nagrade i priznanja</a></li>
@@ -57,6 +55,7 @@
 								<li><a href="spisak-glumaca.html">Spisak glumaca</a></li>
 								<li><a href="spisak-gostiju.html">Spisak gostujucih glumaca</a></li>
 								<li><a href="izvestaj.html">Godisnji izvestaj</a></li>
+								<li><a href="kviz.html">Kviz</a></li>
 							</ul>
 						</li>
 						<li><a href="#"><span>Novosti</span></a>
@@ -86,7 +85,7 @@
 				
 					<!-- PAGE TITLE -->
 					<div id="page-title">
-						<h1 class="page-title">Kviz</h1>
+						<h1 class="page-title">Godišnji izveštaj</h1>
 					</div>
 					<!-- / PAGE TITLE -->
 					
@@ -96,8 +95,15 @@
 			
 			<div class="container">
 
-	
-				<div id="quizArea"></div>
+				<div class="call-to-action clearfix">
+					<div class="four-fifth">
+						<h1>Godišnji izveštaj</h1>
+						<p> možete preuzezi ovde:</p>		
+					</div>
+					<div class="one-fifth last">
+						<a href="files/GODIŠNJI_IZVEŠTAJ_2012.pdf" class="button large full"><span>Preuzmite</span></a>
+					</div>
+				</div>
 				
 				<div class="clear"></div>
 				<div class="divider-empty"></div>	
@@ -108,22 +114,7 @@
 		
 		<!-- FOOTER BOTTOM -->
 		<footer id="footer-bottom" class="clearfix">
-			<div class="container">
-			
-				<!-- COPYRIGHT -->
-				<p class="copyright">&copy; 2014 <a href="#">Atelje 212</a>. All rights reserved.</p>
-				<!-- / COPYRIGHT -->
-				
-
-				<!-- FOOTER SOCIAL -->
-				<ul class="social">
-					<li><a href="#" class="facebook" title="Facebook">Facebook</a></li>
-					<li><a href="#" class="twitter" title="Twitter">Twitter</a></li>
-					<li><a href="#" class="rss" title="RSS">RSS</a></li>
-				</ul>
-				<!-- / FOOTER SOCIAL -->
-				
-			</div>
+		
 		</footer>
 		<!-- / FOOTER BOTTOM -->
 		
@@ -151,55 +142,6 @@
 	<script src="js/jquery.quicksand.js"></script>
 	<script src="js/jquery.gmap.min.js"></script>
 	<script src="js/custom.js"></script>
-	
-	<script src="js/jQuizMe-2.2.1.js"></script>
-
-	<script type="text/javascript">
-
-		$( function($){
-			var undefVar, answerInfo = ["When == is called, type casting is performed. ", "=== does no type casting."],
-			arr = [1, 2, 3, 4];
-			arr["five"] = 5;
-			
-			var quiz = {
-				multi: [
-					{
-						ques: "!!-1 = ?",
-						ans: ( !! -1),
-						ansSel: ["error", "false"],
-						ansInfo: "!!x is the same as Boolean(x).<br/>More info on <a href='http://www.jibbering.com/faq/faq_notes/type_convert.html' target='_blank'>Type conversion</a>"
-					}
-				],
-				multiList: [
-					{
-						ques: "Which is not a javascript keyword.",
-						ans: "local",
-						ansSel: ["new", "delete"]
-					}
-				],
-				tf: [
-					{
-						ques: "(1 == '1') = ?",
-						ans: (1 == '1'),
-						ansInfo: answerInfo[0]
-					}
-				],
-				fill: [
-					{
-						ques: "What is the value of x?<br/><code>x = '1'+2+3</code>",
-						ans: ("1" + 2 + 3)
-					}
-				]
-			},
-			options = {
-				allRandom: true,
-				title: "Koliko poznajete naše pozorište?"
-			};
-			
-			$("#quizArea").jQuizMe(quiz, options);
-		});
-
-	</script>
 
 
 </body>

@@ -7,7 +7,6 @@
 .quiz-el{
 	/*background: #ffaa33;*/
 	font-size: 1.1em;
-	font-family: Arial, Verdana, Helvetica, sans-serif;
 	position: relative;
 	padding: 0.2em;
 	width: 100%;
@@ -20,7 +19,7 @@
 }
 /* .q-innerArea = .q-header, .q-help, .q-prob, .q-intro, .q-gameOver */
 .q-innerArea{
-	background: white; /*#ffdd77*/
+	/*background: white;*/
 	position:relative;
 	clear: both;
 	color: black;
@@ -53,8 +52,8 @@
 }
 /*.q-probArea = .q-ques, .q-ansSel, .q-result */
 .q-probArea{
-	background: #eee;
-	border: thin black solid;
+	/*background: #eee;*/
+	/*border: thin black solid;*/
 	font-size: 1.2em;
 	position: relative;
 }
@@ -82,7 +81,7 @@
     margin-right: auto;
 }
 .q-gameOver .q-statTotal{
-	color: blue;
+	color: black;
 }
 .q-quesInput{
 	width: 95%;

@@ -6,7 +6,7 @@
 <head>
 
 	<!-- /* Title */ -->
-	<title>Repertoar - Pozorište "Atelje 212"</title>
+	<title>Nagrade i priznanja - Pozorište "Atelje 212"</title>
 	
 	<!-- /* Meta Tags */ -->
 	<meta charset="utf-8">
@@ -25,13 +25,7 @@
 	
 	<!-- HTML5 Shiv, support for HTML5 elements in IE6-8  -->
 	<script src="js/modernizr.custom.js"></script>
-
-	<link href='css/fullcalendar.css' rel='stylesheet' />
-	<link href='css/fullcalendar.print.css' rel='stylesheet' />
-	
-
-
-
+		
 </head>
 
 <body>
@@ -53,7 +47,7 @@
 				<nav id="navigation" class="ddsmoothmenu">
 					<ul id="main-menu">
 						<li><a href="index.html"><span>Početna</span></a></li>
-						<li><a href="#"><span>O nama</span></a>
+						<li><a href="#" class="current"><span>O nama</span></a>
 							<ul>
 								<li><a href="istorija.html">Istorija</a></li>
 								<li><a href="nagrade.html">Nagrade i priznanja</a></li>
@@ -61,6 +55,7 @@
 								<li><a href="spisak-glumaca.html">Spisak glumaca</a></li>
 								<li><a href="spisak-gostiju.html">Spisak gostujucih glumaca</a></li>
 								<li><a href="izvestaj.html">Godisnji izvestaj</a></li>
+								<li><a href="kviz.html">Kviz</a></li>
 							</ul>
 						</li>
 						<li><a href="#"><span>Novosti</span></a>
@@ -70,7 +65,7 @@
 							</ul>
 						</li>
 						<li><a href="predstave.html"><span>Predstave</span></a></li>
-						<li><a href="repertoar.html" class="current"><span>Repertoar</span></a></li>
+						<li><a href="repertoar.html"><span>Repertoar</span></a></li>
 						<li><a href="kontakt.html"><span>Kontakt</span></a></li>
 					</ul>
 				</nav>
@@ -90,7 +85,7 @@
 				
 					<!-- PAGE TITLE -->
 					<div id="page-title">
-						<h1 class="page-title">Repertoar</h1>
+						<h1 class="page-title">Nagrade i priznanja</h1>
 					</div>
 					<!-- / PAGE TITLE -->
 					
@@ -100,12 +95,45 @@
 			
 			<div class="container">
 
-					
-				<div id="calendar"></div>
+				<!-- PAGE DESCRIPTION -->
+				<div class="page-description">
+					<h1><span class="colored">Sezona 2012/2013.</span></h1>
+				</div>
+				<!-- / PAGE DESCRIPTION -->
+
+				<div class="one-third">
+					<h3>Jasna Đuričić</h3>
+					<p>Nagrada „Ardalion“ za najbolju žensku ulogu za ulogu Ranjevske Ljubov Andrejevne u predstavi Višnjik, XVII Jugoslovenski pozorišni festival, Užice</p>
+				</div>
+				
+				<div class="one-third">
+					<h3>Nebojša Glogovac</h3>
+					<p>Nagrada „Branka i Mlađa Veselinović“ za ulogu u predstavi Sumnjivo lice</p>
+				</div>
+				
+				<div class="one-third last">
+					<h3>Marija Crnobori</h3>
+					<p>Sretenjski orden III reda na Dan državnosti</p>
+				</div>
 
 				<div class="clear"></div>
-				<div class="divider-empty"></div>	
+				<div class="divider-empty"></div>
 
+				<div class="one-third">
+					<h3>Vlasta Velisavljević</h3>
+					<p>Nagrada za epizodnu ulogu „Nikola Milić“ u predstavi Sumnjivo lice, XLII festival „Dani komedije“, Jagodina</p>
+				</div>
+				
+				<div class="one-third">
+					<h3>Bojan Dimitrijević</h3>
+					<p>Nagrada za najboljeg mladog glumca u predstavi Sumnjivo lice, XLII festival „Dani komedije“, Jagodina</p>
+				</div>
+				
+				<div class="one-third last">
+					<h3>Sumnjivo lice</h3>
+					<p>Najbolja predstava po oceni publike (4,83), XXX Nušićevi dani, Smederevo</p>
+				</div>
+				
 			</div>
 				
 		</section>
@@ -114,22 +142,7 @@
 		
 		<!-- FOOTER BOTTOM -->
 		<footer id="footer-bottom" class="clearfix">
-			<div class="container">
-			
-				<!-- COPYRIGHT -->
-				<p class="copyright">&copy; 2014 <a href="#">Atelje 212</a>. All rights reserved.</p>
-				<!-- / COPYRIGHT -->
-				
 
-				<!-- FOOTER SOCIAL -->
-				<ul class="social">
-					<li><a href="#" class="facebook" title="Facebook">Facebook</a></li>
-					<li><a href="#" class="twitter" title="Twitter">Twitter</a></li>
-					<li><a href="#" class="rss" title="RSS">RSS</a></li>
-				</ul>
-				<!-- / FOOTER SOCIAL -->
-				
-			</div>
 		</footer>
 		<!-- / FOOTER BOTTOM -->
 		
@@ -158,40 +171,6 @@
 	<script src="js/jquery.gmap.min.js"></script>
 	<script src="js/custom.js"></script>
 
-	<script src='js/moment.min.js'></script>
-	<script src='js/jquery-ui.custom.min.js'></script>
-	<script src='js/fullcalendar.js'></script>
-
-	<script>
-
-		$(document).ready(function() {
-			
-			$('#calendar').fullCalendar({
-				header: {
-					left: 'prev,next today',
-					center: 'title',
-					right: ''
-				},
-				defaultDate: '2014-06-12',
-				events: [
-					{
-						title: 'EGZIBICIONISTA - O.J. Traven',
-						start: '2014-06-01T20:00:00'
-					},
-					{
-						title: 'LjUBAVNO PISMO - Z.Bačić, Z.Fazlagić',
-						start: '2014-06-02T20:00:00'
-					},
-					{
-						title: 'REVIZOR - N.V. Gogolj',
-						start: '2014-06-03T20:00:00'
-					}
-				]
-			});
-			
-		});
-
-	</script>
 
 </body>
 </html>
