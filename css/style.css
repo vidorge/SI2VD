@@ -2336,7 +2336,9 @@ html[xmlns] .slides { display: block; }
 }
 	
 #sidebar .subnav-widget li a:hover, #sidebar .categories-widget li a:hover, #sidebar .archives-widget li a:hover, #sidebar .meta-widget li a:hover, #sidebar .popular-posts-widget li a:hover, #sidebar .recent-posts-widget li a:hover, #sidebar .recent-comments-widget li a:hover { color: #f6731d; }
-	
+
+
+.reservation 
 
 #footer .widget{ margin-bottom: 30px; }
 	
@@ -3105,8 +3107,8 @@ a.main-grid .grid { background-image: url('../images/grid.png'); }
 .page-list a.next { border-right: 1px solid transparent; }
 
 .page-list .current {
-	background: #008898;
-	border-right: 1px solid #008898;
+	background: #f6731d;
+	border-right: 1px solid #f6731d;
 	color: #fff;
 }
 
