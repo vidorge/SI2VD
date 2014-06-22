@@ -133,13 +133,17 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 	
-input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="search"], input[type="password"], textarea {
+input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="search"], input[type="password"], textarea, select {
 	border-radius: 3px;
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 	-ms-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
+}
+
+select#nocards {
+	height: 37px;
 }
 
 p, ul, ol, dl, table, fieldset, blockquote, pre, code { margin-bottom: 20px; }

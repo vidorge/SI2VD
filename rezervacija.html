@@ -92,50 +92,89 @@
 			</header>
 			<!-- / INTRO -->
 			
-			<div class="container reservation">
+			
+			<div class="container">
+			
+				<!-- CONTACT WRAP -->
+				<section class="contact-wrap clearfix">
 
-				<form name="rezervacija" action="mailto:atelje@212.rs" method="post">
+					<div class="one-third">
 					
-					<label for="ime-prezime">
-						Ime i prezime:
-						<input name="ime-prezime" id="ime-prezime" type="text">
-					</label>
+						<!-- CONTACT INFO WIDGET -->
+						<section class="widget contact-info-widget clearfix">
+						
+							<h3>Kako rezervisati</h3>
+							
+							<p class="contact-info">Pažljivo popunite sledeća polja u formi i kliknite rezerviši.</p>
+						
+						</section>
+						<!-- / CONTACT INFO WIDGET -->
+						
+					</div>
 					
-					<label for="broj-karata">
-						Broj karata:
-						<select name="broj-karata" id="broj-karata">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-						</select>
-					</label>
-					
-					<label for="inputDate">
-						Datum:
-						<input name="datum" class="inputDate" id="inputDate" value="20/06/2014" />
-					</label>
-					
-					<label for="mail">
-						E-mail:
-						<input name="mail" id="mail" type="text">
-					</label>
+					<form class="contact-form clearfix" action="http://template.bijayshrestha.com.np/newa/contact_form.php" method="post">
+						<div class="two-third last">
 
-					<label for="telefon">
-						Telefon:
-						<input name="telefon" id="telefon" type="text">
-					</label>
+							<div id="result"></div>
+						
+							<!-- CONTACT FORM -->
+						
+							<p class="one-third">
+								<label for="name">Ime i prezime <span class="colored">*</span></label>
+								<input id="name" type="text" name="name" value="" class="text-input requiredField" />
+							</p>
+							<p class="one-third">
+								<label for="email">Email <span class="colored">*</span></label>
+								<input id="email" type="text" name="email" value="" class="text-input requiredField email" />
+							</p>
+							<p class="one-third last">
+								<label for="subject">Telefon <span class="colored">*</span></label>
+								<input id="subject" type="text" name="subject" value="" class="text-input requiredField" />
+							</p>
+							
+							<p class="one-third">
+								<label for="nocards">Broj karata <span class="colored">*</span></label>
+								<select id="nocards" type="text" name="nocards" value="" class="text-input">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+								</select>
+							</p>
+							<p class="one-third last">
+								<label for="date">Datum <span class="colored">*</span></label>
+								<input id="inputDate" name="date" class="text-input inputDate" value="20/06/2014" />
+							</p>
 
-					<input type="submit" value="Rezervisi">
-				</form>
+							<div class="clear"></div>
+							
+							
+						<!-- / CONTACT FORM -->
+						
+						</div>
+
+						<p>
+							<label for="message">Poruka <span class="colored">*</span></label>
+							<textarea id="message" name="message" cols="60" rows="8" class="textarea requiredField"></textarea>
+						</p>
+							
+						<p>
+							<button class="button medium black" name="submit" type="submit"><span>Rezerviši</span></button>
+						</p>
+					</form>
+					
+				</section>
+				<!-- / CONTACT WRAP -->
 				
 				<div class="clear"></div>
-				<div class="divider-empty"></div>	
+				<div class="divider-empty"></div>
+			</div>
 				
 		</section>
 		<!-- / CONTENT -->
+
 	 
 		
 		<!-- FOOTER BOTTOM -->
