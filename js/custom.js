@@ -1,27 +1,10 @@
 function changeLang( lang ) {
 
-	setCookie('lang', lang, 365);
+	localStorage.setItem('lang', lang);
 
-	window.location.href = 'index_' + getCookie('lang') + ".html";
+	window.location.href = 'index_' + localStorage.getItem('lang') + ".html";
 
 
-}
-
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toGMTString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i].trim();
-        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
-    }
-    return "";
 }
 
 jQuery(document).ready(function($) {
@@ -59,14 +42,14 @@ jQuery(document).ready(function($) {
 
 			if ( $(this).attr("href").indexOf("html") >= 0 ) {
 
-				if ( getCookie('lang') == "" ) {
-					setCookie('lang', 'sr', 365);
+				if ( localStorage.getItem('lang') == "" ) {
+					localStorage.setItem('lang', 'sr');
 				}
 
 				var pageName = $(this).attr("href").split('.');
 				pageName = pageName[0];
 
-				window.location.href = pageName + '_' + getCookie('lang') + ".html";
+				window.location.href = pageName + '_' + localStorage.getItem('lang') + ".html";
 
 				e.preventDefault();	
 			}
