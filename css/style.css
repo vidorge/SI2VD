@@ -960,14 +960,14 @@ a.button:hover span, .button:hover span { color: #fff; }
 #navigation {
 	position: relative;
 	margin: auto;
-	width: 567px;
+	width: 573px;
 	height: 50px;
 	font-size: 12px;
 	font-weight: 700;
 }
 
 .en #navigation {
-	width: 593px;
+	width: 512px;
 }
 
 .ddsmoothmenu{ width: auto; }
